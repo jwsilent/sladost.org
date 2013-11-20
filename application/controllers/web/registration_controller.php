@@ -30,8 +30,9 @@ class Registration_controller extends CI_Controller {
                      	$this->input->post('password')
                   	);
 
-         if ( $res !== false ) {
-            $userdata = array('email' => $res->email, 'username' => $res->username, 'is_logged_in' => TRUE, 'user_id' => $res->id);
+         if ($res) {
+            $us = $this->users_model->show($res);
+            $userdata = array('email' => $us->email, 'username' => $us->username, 'is_logged_in' => TRUE, 'user_id' => $us->id);
             $this->session->set_userdata($userdata);
             redirect('');
          }

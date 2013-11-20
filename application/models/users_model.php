@@ -13,7 +13,14 @@ class Users_model extends CI_Model {
 		$res = $this
 			->db
 			->insert('users', $data);
-		echo $res->id;
+		return $this->db->insert_id();
+	}
+
+	function show($id)
+	{
+		$this->db->where('id', $id);
+		$query = $this->db->get('users');
+		return $query->row();
 	}
 
 	function verify_user($email, $password)
@@ -22,6 +29,22 @@ class Users_model extends CI_Model {
 			->db
 			->where('email', $email)
 			->where('password', sha1($password))
+			->limit(1)
+			->get('users');
+
+		if ( $q->num_rows > 0 ) {
+         	return $q->row();
+      	}
+      	return false;
+	}
+
+	function verify_admin($email, $password)
+	{
+		$q = $this
+			->db
+			->where('email', $email)
+			->where('password', sha1($password))
+			->where('role', 1)
 			->limit(1)
 			->get('users');
 

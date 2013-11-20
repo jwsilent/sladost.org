@@ -1,3 +1,4 @@
+<?php $is_admin = $this->session->userdata('is_admin'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,10 +60,10 @@
 					<p>Панель администратора</p>
 			</a>
 				<ul class="nav">
-					<li><a href="<?php echo base_url(); ?>index.php/admin/categories">КАТАЛОГ</a></li>
-					<li><a href="<?php echo base_url(); ?>index.php/admin/items">ТОВАРЫ</a></li>
-					<li><a href="<?php echo base_url(); ?>index.php/admin/carousel">ПРОМО</a></li>
-                  	<li class="dropdown">
+					<li <?php if ($this->uri->segment(2)=='categories') { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>index.php/admin/categories">КАТАЛОГ</a></li>
+					<li <?php if ($this->uri->segment(2)=='items') { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>index.php/admin/items">ТОВАРЫ</a></li>
+					<li <?php if ($this->uri->segment(2)=='carousel') { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>index.php/admin/carousel">ПРОМО</a></li>
+                  	<li class="dropdown <?php if ($this->uri->segment(2)=='news' || $this->uri->segment(2)=='choco_recipes' || $this->uri->segment(2)=='choco_stories') { ?>active<?php } ?>">
                   		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
       						ИНФОРМАЦИЯ
 						   	<b class="caret"></b>
@@ -73,7 +74,11 @@
 							<li><a href="<?php echo base_url(); ?>index.php/admin/choco_recipes">Шоколадные рецепты</a></li>
     					</ul>
     				</li>
-					<li><a href="<?php echo base_url(); ?>index.php/admin/orders">ЗАКАЗЫ</a></li>
+					<li <?php if ($this->uri->segment(2)=='orders') { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>index.php/admin/orders">ЗАКАЗЫ</a></li>
 				</ul>
+											<?php if ($is_admin) { ?>
+								<a href="<?php echo base_url(); ?>index.php/admin/logout" class="btn btn-primary auth-button">ВЫЙТИ</a>
+							<?php } ?>
+
 	</div>
 	<!--/.navbar -->
