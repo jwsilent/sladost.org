@@ -114,6 +114,7 @@ $route["cart"] = "web/cart_controller/index";
 
 $route["registration"] = "web/registration_controller/index";
 $route["login"] = "web/login_controller/index";
+$route["logout"] = "admin/login_controller/logout";
 $route["admin/login"] = "admin/login_controller/index";
 $route["admin/logout"] = "admin/login_controller/logout";
 
