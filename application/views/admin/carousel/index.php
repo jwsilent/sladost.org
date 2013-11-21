@@ -3,6 +3,20 @@
 	<a class="btn" href="carousel/new">Создать</a>		
 
 </div>
+
+<div class="span11">
+	<div class="story_item" style="background:none;">
+		<span >Заголовок</span>
+		<div class="story_item_controls">
+			<p>Редактировать</p>
+			<p>Удалить</p>
+		</div>
+	</div>
+</div>
+<span></span>
+<br>
+<br>
+
 <?php foreach ($carousels as $carousel): ?>
 
 <div class="span11">
