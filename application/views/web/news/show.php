@@ -4,7 +4,7 @@
 			<p>Новости:</p>
 			<ul class="news_list">
 				<?php foreach($news as $news_item):?>
-				<li><a href="index.php/news/<?php echo $news_item['id'] ?>"><?php echo $news_item['title']?></a></li>
+				<li><a href="<?php echo base_url(); ?>index.php/news/<?php echo $news_item['id'] ?>"><?php echo $news_item['title']?></a></li>
 				<?php endforeach ?>
 			</ul>
 		</div>

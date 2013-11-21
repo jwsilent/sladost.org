@@ -92,7 +92,7 @@ class Items_controller extends CI_Controller {
 	 function create()
 	 {
 	 	$data = $this->input->post();
-	 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/sladost.org/assets/uploads/items';
+	 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/assets/uploads/items';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '10000';
 		$config['max_width']  = '6000';
@@ -112,7 +112,7 @@ class Items_controller extends CI_Controller {
 	 {	
 	 	$post_data = $this->input->post();
 
-	 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'] . '/sladost.org/assets/uploads/xls';
+	 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'] . '/assets/uploads/xls';
 		$config['allowed_types'] = 'xls|xlsx';
 
 		$this->load->library('upload', $config);
@@ -121,7 +121,7 @@ class Items_controller extends CI_Controller {
 		$upload_data = $this->upload->data();
 		$this->load->library('Spreadsheet_Excel_Reader');
 		
-		$uploadpath = $_SERVER['DOCUMENT_ROOT'] . '/sladost.org/assets/uploads/xls/' . $upload_data['file_name'];
+		$uploadpath = $_SERVER['DOCUMENT_ROOT'] . '/assets/uploads/xls/' . $upload_data['file_name'];
 		$xls_data = new Spreadsheet_Excel_Reader($uploadpath);
 		$data['category_id'] = $post_data['category_id'];
 		for($row = 2; $row < $xls_data->rowcount(0); $row++)
