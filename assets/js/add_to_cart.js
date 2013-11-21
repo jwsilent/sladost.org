@@ -29,7 +29,7 @@ var setClickToAddToCart = function(){
 			this_el = $(this);
 					$.ajax({
 						type: "POST",
-						url: "/sladost.org/index.php/add_to_cart",
+						url: "/index.php/add_to_cart",
 						data:  {
 							user_id: user_id, 
 							item_id: this_el.attr('itemid'), 
@@ -79,7 +79,7 @@ $('a.category_link').click(function(){
 
 		$.ajax({
 		type: "POST",
-		url: "/sladost.org/index.php/catalogue/index_by_category",
+		url: "/index.php/catalogue/index_by_category",
 		data: { category_id: c_link.attr('categoryid') },
 		success: function (result) {
 			main_catalogue_index.html(result);
