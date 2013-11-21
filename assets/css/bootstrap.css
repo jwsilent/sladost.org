@@ -6243,7 +6243,14 @@ div.span11 > div.recipe_item:hover
   /*background: #AAA;*/
 }
 
+div.recipe_item{
+  position: relative;
+}
 
+div.recipe_item > span{
+  position: absolute;
+  left: 370px;
+}
 
 form 
 {
