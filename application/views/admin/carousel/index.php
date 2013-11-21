@@ -8,8 +8,6 @@
 	<div class="story_item" style="background:none;">
 		<span >Заголовок</span>
 		<div class="story_item_controls">
-			<p>Редактировать</p>
-			<p>Удалить</p>
 		</div>
 	</div>
 </div>

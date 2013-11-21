@@ -7,8 +7,6 @@
 		<span >E-mail пользователя</span>
 		<span class="order_status">Статус заказа</span>
 		<div class="recipe_item_controls">
-			<p>Действия</p>
-			<p>Удалить</p>
 		</div>
 	</div>
 </div>

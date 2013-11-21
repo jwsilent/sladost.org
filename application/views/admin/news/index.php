@@ -7,8 +7,8 @@
 		<span >Наименование</span>
 		<div class="story_item_controls">
 			<p>Дата создания</p>
-			<p>Редактировать</p>
-			<p>Удалить</p>
+			<p style="visibility:hidden;">Редактировать</p>
+			<p style="visibility:hidden;">Удалить</p>
 		</div>
 	</div>
 </div>

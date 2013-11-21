@@ -30,8 +30,7 @@
 		<span >Наименование</span>
 		<div class="story_item_controls">
 			<p>Дата добавления</p>
-			<p>Редактировать</p>
-			<p>Удалить</p>
+
 		</div>
 	</div>
 </div>
