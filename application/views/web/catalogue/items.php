@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <div class="catalogue_description">
 	<?php echo $category['description']; ?>
 </div>

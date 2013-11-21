@@ -124,6 +124,7 @@ class Items_controller extends CI_Controller {
 		$uploadpath = $_SERVER['DOCUMENT_ROOT'] . '/assets/uploads/xls/' . $upload_data['file_name'];
 		$xls_data = new Spreadsheet_Excel_Reader($uploadpath);
 		$data['category_id'] = $post_data['category_id'];
+		$data['photo_url'] = "empty.png";
 		for($row = 2; $row < $xls_data->rowcount(0); $row++)
 		{
 			for($col = 1; $col <= $xls_data->colcount(0); $col++)
