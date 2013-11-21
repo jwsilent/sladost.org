@@ -15,10 +15,10 @@
 	<?php endforeach ?>
 	<div class="order_form">
 		<?php if (isset($cart_items[0])) { echo form_open('make_order'); ?>
-			<?php echo form_submit('make_order', 'ОФОРМИТЬ ЗАКАЗ', 'class="btn btn-danger submit_btn"'); ?>
+			<?php echo form_submit('make_order', 'ОФОРМИТЬ ЗАКАЗ', 'class="btn btn-warning submit_btn"'); ?>
 		<?php echo form_close(''); ?>
 		<?php echo form_open('empty_cart'); ?>
-			<?php echo form_submit('empty_cart', 'ОЧИСТИТЬ КОРЗИНУ', 'class="btn btn-warning submit_btn"'); ?>
+			<?php echo form_submit('empty_cart', 'ОЧИСТИТЬ КОРЗИНУ', 'class="btn btn-danger submit_btn"'); ?>
 		<?php echo form_close(''); } else { ?>
 		<p>Ваша корзина пуста.</p>
 		<?php }?>
