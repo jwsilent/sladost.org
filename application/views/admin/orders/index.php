@@ -5,7 +5,7 @@
 <div class="span11">
 	<div class="recipe_item" style="background:none;">
 		<span >E-mail пользователя</span>
-		<span class="order_status">Статус заказа</span>
+		<span class="order_status" style="left: 345px;">Статус заказа</span>
 		<div class="recipe_item_controls">
 		</div>
 	</div>
