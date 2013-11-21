@@ -1,7 +1,7 @@
 <div class="main_catalogue">
 	<div class="main_cat_header">
 		<p>КАТАЛОГ</p>
-					<div class="main_horizontal_line"></div>
+					<div class="main_horizontal_line" style="width: 841px;"></div>
 				</div>
 				<div class="span2">
 					<div class="cat_menu">

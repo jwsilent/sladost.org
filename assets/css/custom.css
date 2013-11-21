@@ -210,6 +210,11 @@ div.navbar-centered {
 	margin-left: 22% !important;
 }
 
+div.catalogue_description
+{
+	border-bottom: 2px solid #CACACA;
+}
+
 div.main_catalogue_index {
 	padding-top: 10px;
 }
@@ -218,17 +223,24 @@ div.catalogue_element {
 	width: 175px;
 	height:170px;
 	display: inline-block;
+	margin-right: 9px;
+	margin-bottom: 30px;	
 }
 
 div.catalogue_element > p {
-	display: inline-block;
+	/*display: inline-block;*/
 	font-size: 9pt;
-	width: 95px;
+	width: 160px;
 	margin: 0;
 	padding: 0;
 	vertical-align: middle;
 	text-align: right;
 }
+
+div.catalogue_element > p.price {
+	display: inline-block;
+	width: 95px;
+	}
 
 div.catalogue_element > a {
 	font-family: “Myriad Pro”, Helvetica, Tahoma, sans-serif;
