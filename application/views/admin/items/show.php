@@ -6,6 +6,6 @@
 		<p><?php echo $item['weight']?></p>
 		<p><?php echo $item['size']?></p>
 		<p><?php echo $item['price']?></p>
-		<img src="<?php echo '/sladost.org/assets/uploads/items/'. $item['photo_url'] ?>"></img>
+		<img src="<?php echo '/assets/uploads/items/'. $item['photo_url'] ?>"></img>
 	</div>
 </div>

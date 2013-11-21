@@ -77,7 +77,7 @@ class Categories_controller extends CI_Controller {
 	 function update()
 	 {
 	 	$data = $this->input->post();
-	 	$this->news_model->update($data);
+	 	$this->categories_model->update($data);
 		redirect('/admin/categories/'. $data['id'], 'refresh');
 	 }
 }

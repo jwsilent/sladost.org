@@ -4,7 +4,7 @@
 			<p>Истории:</p>
 			<ul class="news_list">
 				<?php foreach($stories as $story):?>
-				<li><a href="index.php/choco_stories/<?php echo $story['id'] ?>"><?php echo $story['title']?></a></li>
+				<li><a href="<?php echo base_url(); ?>index.php/choco_stories/<?php echo $story['id'] ?>"><?php echo $story['title']?></a></li>
 				<?php endforeach ?>
 			</ul>
 		</div>

@@ -54,7 +54,7 @@ class Carousel_controller extends CI_Controller {
 	 {
 	 	$data = $this->input->post();
 
-	 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/sladost.org/assets/uploads/carousel';
+	 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/assets/uploads/carousel';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '10000';
 		$config['max_width']  = '6000';

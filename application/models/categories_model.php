@@ -38,6 +38,9 @@ class Categories_model extends CI_Model {
 
 	function update($data)
 	{
-		// Here post update function
+		$id = $data['id'];
+		$data = array('title' => $data['title'], 'description' => $data['description'], 'parent_category_id' => $data['parent_category_id']);
+		$this->db->where('id', $id);
+		$this->db->update('categories', $data);
 	}
 }

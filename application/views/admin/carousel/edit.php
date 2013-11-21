@@ -8,9 +8,6 @@ echo form_input('text', $carousel['text']); ?>
 <?php echo form_label('Ссылка:');
 echo form_input('url', $carousel['url']); ?>
 <hr>
-<?php echo form_label('Изображение:');
-echo form_upload('image', ''); ?>
-<hr>
 <?php echo form_submit('submit', 'Сохранить');
 echo form_close();
 ?>

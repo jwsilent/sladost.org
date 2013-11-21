@@ -4,7 +4,7 @@
 			<p>Рецепты:</p>
 			<ul class="news_list">
 				<?php foreach($recipes as $recipe):?>
-				<li><a href="index.php/choco_recipes/<?php echo $recipe['id'] ?>"><?php echo $recipe['title']?></a></li>
+				<li><a href="<?php echo base_url(); ?>index.php/choco_recipes/<?php echo $recipe['id'] ?>"><?php echo $recipe['title']?></a></li>
 				<?php endforeach ?>
 			</ul>
 		</div>
