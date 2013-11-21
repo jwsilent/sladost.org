@@ -6243,11 +6243,11 @@ div.span11 > div.recipe_item:hover
   /*background: #AAA;*/
 }
 
-div.recipe_item{
+div.recipe_item, div.story_item{
   position: relative;
 }
 
-div.recipe_item > span{
+div.recipe_item > span.order_status{
   position: absolute;
   left: 370px;
 }

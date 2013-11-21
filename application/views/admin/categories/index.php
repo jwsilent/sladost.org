@@ -5,13 +5,12 @@
 <div class="span11">
 	<div class="story_item" style="background:none;">
 		<span >Наименование</span>
-<!-- 		<div class="story_item_controls">
-			<p><a href="categories/<?php echo $category['id'] ?>/edit">Редактировать</a></p>
-			<p><a href="categories/<?php echo $category['id'] ?>/delete">Удалить</a></p>
-		</div> -->
+		<div class="story_item_controls">
+			
+		</div>
 	</div>
 </div>
-<br>
+<span></span>
 <br>
 <br>
 

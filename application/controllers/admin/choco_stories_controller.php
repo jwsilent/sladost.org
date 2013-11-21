@@ -24,14 +24,14 @@ class Choco_stories_controller extends CI_Controller {
 	 	$data['story'] = $this->choco_stories_model->show($id);
 
 	 	$this->load->view('admin/header');
-	 	$this->load->view('admin/choco_stroies/show', $data);
+	 	$this->load->view('admin/choco_stories/show', $data);
 	 	$this->load->view('admin/footer');	
 	 }
 
 	 function new_story()
 	 {	
 	 	$this->load->view('admin/header');
-	 	$this->load->view('admin/choco_stroies/new');
+	 	$this->load->view('admin/choco_stories/new');
 	 	$this->load->view('admin/footer');
 	 }
 
@@ -60,7 +60,7 @@ class Choco_stories_controller extends CI_Controller {
 	 function update()
 	 {
 	 	$data = $this->input->post();
-	 	$this->choco_stroies_model->update($data);
+	 	$this->choco_stories_model->update($data);
 		redirect('/admin/choco_stories/'. $data['id'], 'refresh');
 	 }
 }

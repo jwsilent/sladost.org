@@ -1,6 +1,21 @@
 <div class="crud_links">
 		<a class="btn" href="choco_recipes/new">Создать</a>
 </div>
+
+<div class="span11">
+	<div class="story_item" style="background:none;">
+		<span >Название</span>
+		<div class="story_item_controls">
+			<p>Дата создания</p>
+			<p style="visibility:hidden;">Редактировать</p>
+			<p style="visibility:hidden;">Удалить</p>
+		</div>
+	</div>
+</div>
+<span></span>
+<br>
+<br>
+
 <?php foreach ($recipes as $recipe): ?>
 
 <div class="span11">
