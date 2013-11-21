@@ -5,12 +5,12 @@ html, body{
 div.masterhead {
 	position: absolute;
 	width: 100%;
-	min-width: 1020px;
+	min-width: 1040px;
 }
 
 body > div.footer 
 {
-	min-width: 1020px;
+	min-width: 1040px;
 }
 
 body > div.container {
