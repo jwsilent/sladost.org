@@ -178,7 +178,7 @@ div.navbar {
 }
 
 div.navbar > div.container {
-	width: 940px !important;
+	width: 1040px !important;
 	position: relative;
 }
 
@@ -279,10 +279,10 @@ div.container > ul.nav ~ p
 {
 	display: inline-block;
 	position: relative;
-	right: -100px;
-	top: -34px;
+	top: 7px;
 	width: 127px;
 	color: #FFF;
+	float: right;
 }
 
 div.footer {
